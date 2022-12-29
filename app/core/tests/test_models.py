@@ -46,5 +46,5 @@ class ModelTests(TestCase):
             'test123'
         )
 
-        self.assertEqual(user.is_superuser, True)
-        self.assertEqual(user.is_staff, True)
+        self.assertTrue(user.is_superuser)
+        self.assertTrue(user.is_staff)
